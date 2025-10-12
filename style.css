@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #000000 0%, red 100%);
+  color: white;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+/* Шапка */
+header {
+  position: sticky;
+  top: 0;
+  background-color: red;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  background: black;              /* Фон чёрный */
+  color: white;                   /* Белый текст */
+  padding: 0.5em 1em;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: 3px solid red;          /* Красная рамка */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6); /* Красное свечение */
+  z-index: 1100;
+}
+
+nav {
+  margin-left: auto;
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-left: 250px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: darkred;
+  color: white;
+}
+
+/* Основное содержимое */
+main {
+  max-width: 1100px;
+  margin: 100px auto 40px;
+  padding: 0 20px;
+  flex: 1;
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  color: white;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  border-bottom: 3px solid red;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: red;
+  margin-bottom: 10px;
+}
+
+section {
+  background: black;
+  color: white;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+  margin-bottom: 25px;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: gold;
+  color: black;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.float-left {
+  float: left;
+  width: 48%;
+  margin-right: 2%;
+}
+
+.float-right {
+  float: right;
+  width: 48%;
+  margin-left: 2%;
+}
+
+.clear {
+  clear: both;
+  margin-bottom: 30px;
+}
+
+/* Списки */
+ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+
+ol[type="1"] {
+  list-style-type: decimal;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+
+/* Формы */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+input, select, textarea, button {
+  padding: 0.6em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  background: #111;
+  color: white;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: red;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255,0,0,0.4);
+}
+
+::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+button {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+/* Подвал */
+footer {
+  background: red;
+  color: white;
+  padding: 20px 25px;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-size: 0.9rem;
+}
+
+footer address {
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer nav ul li a:hover,
+footer nav ul li a:focus {
+  text-decoration: underline;
+}
