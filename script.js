@@ -8,13 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (burgerLabel && mobileMenu && burgerCheckbox) {
     burgerLabel.addEventListener("click", () => {
-      if (burgerCheckbox.checked) {
-        mobileMenu.style.display = "flex";
-        mobileMenu.setAttribute('aria-hidden', 'false');
-      } else {
-        mobileMenu.style.display = "none";
-        mobileMenu.setAttribute('aria-hidden', 'true');
-      }
+      const isChecked = burgerCheckbox.checked;
+      mobileMenu.style.display = isChecked ? "flex" : "none";
+      mobileMenu.setAttribute('aria-hidden', isChecked ? 'false' : 'true');
     });
 
     mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
@@ -32,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* Close notify dropdown on outside click */
   document.addEventListener('click', (e) => {
     document.querySelectorAll('.notify-list').forEach(list => {
       if (!list.parentElement.contains(e.target)) list.style.display = 'none';
@@ -70,18 +65,14 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-  addCardAlerts(".card button");
-  addCardAlerts(".glass-card button");
-  addCardAlerts(".filter-card button");
-  addCardAlerts(".glow-card button");
+
+  ["card button", ".glass-card button", ".filter-card button", ".glow-card button"].forEach(sel => addCardAlerts(sel));
 
   /* ==================== CARD HOVER EFFECTS ==================== */
   document.querySelectorAll('.card').forEach(card => {
-    // Border rays effect
     card.addEventListener('mouseenter', () => card.classList.add('rays'));
     card.addEventListener('mouseleave', () => card.classList.remove('rays'));
 
-    // Optional squares movement inside card
     const squares = card.querySelectorAll('.squares span');
     card.addEventListener('mouseover', () => {
       squares.forEach(sp => {
@@ -149,8 +140,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 335ae18 (Обновлены CSS и JS: исправлены карточки, бургер и форма)
