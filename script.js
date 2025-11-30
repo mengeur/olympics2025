@@ -149,4 +149,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 335ae18 (Обновлены CSS и JS: исправлены карточки, бургер и форма)
