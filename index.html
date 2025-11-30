@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Олимпийские игры 2025</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,15 +13,21 @@
 
     <div class="burger-wrap">
         <input type="checkbox" id="nav-toggle">
-        <label class="burger" for="nav-toggle">
+        <label class="burger" for="nav-toggle" aria-label="Открыть меню">
             <span></span>
             <span></span>
             <span></span>
         </label>
 
-        <nav class="mobile-menu">
+        <nav class="mobile-menu" aria-hidden="true">
             <ul>
+                <li><a href="#home">Главная</a></li>
                 <li><a href="#history">История</a></li>
+                <li><a href="#sports">Виды спорта</a></li>
+                <li><a href="#medals">Медали</a></li>
+                <li><a href="#form">Форма</a></li>
+                <li><a href="#map">Карта</a></li>
+                <li><a href="#video">Видео</a></li>
                 <li><a href="#gallery">Галерея</a></li>
                 <li><a href="#cards">Карточки</a></li>
                 <li><a href="#actions">Кнопки</a></li>
@@ -31,9 +37,15 @@
         </nav>
     </div>
 
-    <nav class="desktop-nav">
+    nav" role="navigation" aria-label="Главное меню">
         <ul>
+            <li><a href="#home">Главная</a></li>
             <li><a href="#history">История</a></li>
+            <li><a href="#sports">Виды спорта</a></li>
+            <li><a href="#medals">Медали</a></li>
+            <li><a href="#form">Форма</a></li>
+            <li><a href="#map">Карта</a></li>
+            <li><a href="#video">Видео</a></li>
             <li><a href="#gallery">Галерея</a></li>
             <li><a href="#cards">Карточки</a></li>
             <li><a href="#actions">Кнопки</a></li>
@@ -45,77 +57,180 @@
 
 <main>
 
-    <h1>Добро пожаловать на Олимпийские игры 2025!</h1>
-    <blockquote>
-        «Главное в Олимпийских играх — не победа, а участие»
-        <br>— Пьер де Кубертен
-    </blockquote>
+    <section id="home">
+        <h1>Добро пожаловать на Олимпийские игры!</h1>
+        <p>Здесь вы узнаете всё о крупнейшем спортивном событии планеты — Олимпийских играх.</p>
+        <blockquote>«Главное в Олимпийских играх — не победа, а участие»<br>— Пьер де Кубертен</blockquote>
+    </section>
 
     <section id="history">
         <h2>История Олимпийских игр</h2>
-        <p>Олимпийские игры — крупнейшие международные спортивные соревнования, проводимые раз в четыре года. 
-        Они включают летние и зимние виды спорта и объединяют спортсменов всего мира.</p>
-    </section>
+        <p>Олимпийские игры — крупнейшие международные спортивные соревнования, проводимые раз в четыре года.</p>
 
-    <section id="gallery">
-        <h2>Галерея Олимпийских игр</h2>
+        <div class="two-col">
+            <div class="col">
+                <h3>Древние игры</h3>
+                <p>Олимпийские игры берут начало в Древней Греции.</p>
+            </div>
 
-        <div class="gallery">
-            <img src="https://tse4.mm.bing.net/th/id/OIP.gBh1TLFI7Z4DGBfdJODEJgHaFj?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
-            <img src="https://tse3.mm.bing.net/th/id/OIP.ei9SOU2pPXbjI_x_lAIxEAHaE7?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
-            <img src="https://tse4.mm.bing.net/th/id/OIP.-XmYzNRrtBBVr58FNV_TdgHaEK?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
-            <img src="https://rossaprimavera.ru/static/files/641419b3f231.jpg">
-            <img src="https://th.bing.com/th?id=OIF.iwXh%2fj%2fOKOoWa5Jw%2f2KubQ&cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
-            <img src="https://tse1.mm.bing.net/th/id/OIP.GzGQ19f0uwRMfnXdZp6AgQHaEK?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
-            <img src="https://tse3.mm.bing.net/th/id/OIP.p-GHGkzUyhYpSzLhSY7NHAHaE8?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
-            <img src="https://tse3.mm.bing.net/th/id/OIP.7-cNgYIqFzXIdiqeztJw_QHaFE?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
+            <div class="col">
+                <h3>Современные игры</h3>
+                <p>Игры проходят каждые четыре года и включают летние и зимние дисциплины.</p>
+            </div>
         </div>
     </section>
 
+    <section id="sports">
+        <h2>Виды спорта</h2>
+
+        <div class="two-col">
+            <div class="col">
+                <h3>Летние</h3>
+                <p>Лёгкая атлетика, плавание, гимнастика и многое другое.</p>
+            </div>
+
+            <div class="col">
+                <h3>Зимние</h3>
+                <p>Фигурное катание, хоккей, лыжные гонки, биатлон…</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="medals">
+        <h2>Информация о медалях</h2>
+
+        <div class="medal-box">
+            Всего медалей вручено: <strong>10500+</strong>
+        </div>
+
+        <dl>
+            <dt>Золото</dt><dd>За первое место</dd>
+            <dt>Серебро</dt><dd>За второе место</dd>
+            <dt>Бронза</dt><dd>За третье место</dd>
+            <dt>Участие</dt><dd>Все получают сертификаты</dd>
+        </dl>
+    </section>
+
+    <!-- Форма: заменена на grid-форму с эффектами (практика) -->
+    <section id="form">
+        <h2>Форма обратной связи</h2>
+
+        <form>
+            <input type="text" placeholder="Имя" required>
+            <input type="email" placeholder="Email" required>
+            <input type="datetime-local">
+
+            <select required>
+                <option value="">Любимый вид спорта</option>
+                <option value="athletics">Лёгкая атлетика</option>
+                <option value="swimming">Плавание</option>
+                <option value="hockey">Хоккей</option>
+            </select>
+
+            <textarea rows="4" placeholder="Ваш комментарий..."></textarea>
+
+            <label><input type="checkbox" required> Согласен с условиями</label>
+
+            <div class="btn-wrap">
+                <button type="submit" class="primary-btn">Отправить</button>
+                <button type="reset" class="btn">Сброс</button>
+            </div>
+        </form>
+
+    </section>
+
+    <section id="map">
+        <h2>Где пройдут Олимпийские игры</h2>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425872426491!3d40.74096684378299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sMadison%20Square%20Garden!5e0!3m2!1sen!2sus!4v1644882356811!5m2!1sen!2sus"
+            width="100%" height="400" style="border:0;" allowfullscreen loading="lazy">
+        </iframe>
+    </section>
+
+    <section id="video">
+        <h2>Видео о прошлых Олимпийских играх</h2>
+
+        <div class="video-wrap">
+            <iframe width="100%" height="400"
+                src="https://www.youtube.com/embed/d1KcJBEqjSE"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Галерея</h2>
+
+        <div class="gallery">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.gBh1TLFI7Z4DGBfdJODEJgHaFj" alt="Олимпийские игры">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.ei9SOU2pPXbjI_x_lAIxEAHaE7" alt="Спортсмены">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.-XmYzNRrtBBVr58FNV_TdgHaEK" alt="Церемония открытия">
+            <img src="https://rossaprimavera.ru/static/files/641419b3f231.jpg" alt="Олимпийский огонь">
+        </div>
+    </section>
+
+    <!-- Исправленная секция карточек -->
     <section id="cards">
         <h2>Популярные виды спорта</h2>
-
         <div class="cards">
-
             <div class="card">
-                <img src="https://tse2.mm.bing.net/th/id/OIP.j_x8xlRSRm-iojbhOHgx5gHaE7?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%; border-radius:10px;">
-                <h3>Лёгкая атлетика</h3>
-                <p>Самый массовый олимпийский вид спорта: бег, прыжки, метания. Считается «королевой спорта».</p>
-                <button class="btn primary-btn">Подробнее</button>
+                <div class="squares" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="card-inner">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.j_x8xlRSRm-iojbhOHgx5gHaE7" alt="Лёгкая атлетика">
+                    <h3>Лёгкая атлетика</h3>
+                    <p>Королева спорта, включающая бег, прыжки и метания.</p>
+                    <div class="card-actions">
+                        <button class="btn primary-btn">Подробнее</button>
+                    </div>
+                </div>
             </div>
-
             <div class="card">
-                <img src="https://tse3.mm.bing.net/th/id/OIP.XmedwdPRnWomrpg7UGQj1QHaE7?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%; border-radius:10px;">
-                <h3>Плавание</h3>
-                <p>Один из важнейших видов игр. Включает 17 дисциплин и требует высокой выносливости.</p>
-                <button class="btn primary-btn">Подробнее</button>
+                <div class="squares" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="card-inner">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.XmedwdPRnWomrpg7UGQj1QHaE7" alt="Плавание">
+                    <h3>Плавание</h3>
+                    <p>Водный вид спорта с различными стилями и дистанциями.</p>
+                    <div class="card-actions">
+                        <button class="btn primary-btn">Подробнее</button>
+                    </div>
+                </div>
             </div>
-
             <div class="card">
-                <img src="https://th.bing.com/th/id/R.39ea15389df7bada734f15dd4d366886?rik=9xPIqTbRL12mcA&pid=ImgRaw&r=0" style="width:100%; border-radius:10px;">
-                <h3>Хоккей</h3>
-                <p>Зрелищный динамичный спорт. Отличается скоростью и силовыми приёмами.</p>
-                <button class="btn primary-btn">Подробнее</button>
+                <div class="squares" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="card-inner">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.-XmYzNRrtBBVr58FNV_TdgHaEK" alt="Гимнастика">
+                    <h3>Гимнастика</h3>
+                    <p>Искусство выполнения сложных физических упражнений.</p>
+                    <div class="card-actions">
+                        <button class="btn primary-btn">Подробнее</button>
+                    </div>
+                </div>
             </div>
-
-            <div class="card">
-                <img src="https://tse3.mm.bing.net/th/id/OIP.uliw1OUGm2A7M3hHfSih8wHaEK?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" style="width:100%; border-radius:10px;">
-                <h3>Фигурное катание</h3>
-                <p>Красивейший вид спорта, сочетающий артистизм и сложные технические элементы.</p>
-                <button class="btn primary-btn">Подробнее</button>
-            </div>
-
         </div>
     </section>
 
     <section id="actions">
-        <h2>Кнопки действий</h2>
+        <h2>Кнопки действий и соц-иконки</h2>
 
         <div class="buttons">
             <button class="btn btn1">Участники</button>
             <button class="btn btn2">Результаты</button>
             <button class="btn btn3">Награды</button>
             <button class="btn btn4">История</button>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="socials">
+            <a class="social" href="#" title="VK"><i>VK</i></a>
+            <a class="social" href="#" title="YouTube"><i>YT</i></a>
+            <a class="social" href="#" title="Instagram"><i>IG</i></a>
         </div>
     </section>
 
@@ -126,10 +241,10 @@
             <button class="notify-btn">Показать уведомления</button>
 
             <ul class="notify-list">
-                <li>🏅 Обновлены медальные зачёты</li>
-                <li>📅 Добавлено расписание соревнований</li>
-                <li>🎥 Доступны новые видеоматериалы</li>
-                <li>📌 Обновлены рекорды спортсменов</li>
+                <li>🏅 Медальный зачёт обновлён</li>
+                <li>📅 Добавлено расписание</li>
+                <li>🎥 Новые видеоматериалы</li>
+                <li>📌 Обновлены рекорды</li>
             </ul>
         </div>
     </section>
@@ -140,10 +255,155 @@
         <p>Телефон: <a href="tel:+71234567890">+7 (123) 456-78-90</a></p>
     </section>
 
+    <!-- ===== Практическая работа №7 (встроено) ===== -->
+    <section id="practice7">
+        <h2>Практика №7 — glassmorphism, фильтры, cursor</h2>
+
+        <h3>1) Три карточки в стиле glassmorphism</h3>
+        <div class="cards">
+            <div class="card">
+                <div class="squares" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="card-inner">
+                    <h3>Карточка 1</h3>
+                    <p>Пример glassmorphism с анимированными квадратиками.</p>
+                    <button class="btn primary-btn">Подробнее</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="squares" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="card-inner">
+                    <h3>Карточка 2</h3>
+                    <p>Ещё одна карточка с псевдоэлементами ::before и ::after.</p>
+                    <button class="btn primary-btn">Подробнее</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="squares" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="card-inner">
+                    <h3>Карточка 3</h3>
+                    <p>Анимация запускается при наведении — покадровая.</p>
+                    <button class="btn primary-btn">Подробнее</button>
+                </div>
+            </div>
+        </div>
+
+        <h3>2) Соц-кнопки с градиентом-покрытием</h3>
+        <div class="socials">
+            <a class="social" href="#" title="VK"><i>VK</i></a>
+            <a class="social" href="#" title="YouTube"><i>YT</i></a>
+            <a class="social" href="#" title="Instagram"><i>IG</i></a>
+        </div>
+
+        <h3>3) Форма регистрации (glassmorphism + calc + переменные)</h3>
+        <form class="practice7-form" aria-label="Форма регистрации">
+            <input type="text" placeholder="Имя" required>
+            <input type="email" placeholder="Email" required>
+            <select required>
+                <option value="">Выберите спорт</option>
+                <option>Лёгкая атлетика</option>
+                <option>Плавание</option>
+                <option>Гимнастика</option>
+            </select>
+            <textarea rows="3" placeholder="Коротко о себе..."></textarea>
+            <div class="btn-wrap">
+                <button type="submit" class="primary-btn">Зарегистрироваться</button>
+            </div>
+        </form>
+
+        <h3>4) Три карточки с filter / transform</h3>
+        <div class="cards">
+            <div class="card">
+                <div class="card-inner">
+                    <h3>Filter 1</h3>
+                    <p>На hover применяются filter() и transform.</p>
+                    <button class="btn">Подробнее</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <h3>Filter 2</h3>
+                    <p>Пример grayscale + contrast при наведении.</p>
+                    <button class="btn">Подробнее</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <h3>Filter 3</h3>
+                    <p>Еще одна демонстрация filter + drop-shadow.</p>
+                    <button class="btn">Подробнее</button>
+                </div>
+            </div>
+        </div>
+
+        <h3>5) Карточки с "лучами" вдоль границ</h3>
+        <div class="cards">
+            <div class="card rays">
+                <div class="card-inner">
+                    <h3>Рей 1</h3>
+                    <p>Подсветка вдоль границ при hover.</p>
+                </div>
+            </div>
+            <div class="card rays">
+                <div class="card-inner">
+                    <h3>Рей 2</h3>
+                    <p>Та же логика, другой текст.</p>
+                </div>
+            </div>
+            <div class="card rays">
+                <div class="card-inner">
+                    <h3>Рей 3</h3>
+                    <p>Еще одна карточка с эффектом.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Практическая работа №8 (встроено) ===== -->
+    <section id="practice8">
+        <h2>Практика №8 — CSS Grid Layout</h2>
+
+        <h3>1) Адаптивный макет на Grid</h3>
+        <p>Основная разметка сайта переведена на CSS Grid (desktop: 12 колонок). Попробуй сжать окно — макет адаптируется.</p>
+
+        <h3>2) Вариант: сетка из 7 блоков (mosaic)</h3>
+        <div class="mosaic-grid">
+            <!-- простая демонстрация 7 блоков -->
+            <div class="mosaic-item">1</div>
+            <div class="mosaic-item">2</div>
+            <div class="mosaic-item">3</div>
+            <div class="mosaic-item">4</div>
+            <div class="mosaic-item">5</div>
+            <div class="mosaic-item">6</div>
+            <div class="mosaic-item">7</div>
+        </div>
+
+        <h3>3) Форма на Grid</h3>
+        <p>Форма выше уже использует Grid-раскладку и адаптивное поведение (focus/hover анимации). Нажми Tab, чтобы протестировать :focus стили.</p>
+
+        <h3>4) Footer с Grid и псевдоэлементами</h3>
+        <p>Footer использует Grid (см.ниже).</p>
+    </section>
+
 </main>
 
 <footer>
-    © 2025 Олимпийские игры
+    <div class="f1">© 2025 Олимпийские игры</div>
+    <div class="f2 center">
+      <div class="socials">
+        <a class="social" href="#"><i>VK</i></a>
+        <a class="social" href="#"><i>YT</i></a>
+        <a class="social" href="#"><i>IG</i></a>
+      </div>
+    </div>
+    <div class="f3">Email: <a href="mailto:info@olympics2025.com">info@olympics2025.com</a></div>
 </footer>
 
 <script src="script.js"></script>
