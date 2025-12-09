@@ -14,8 +14,6 @@
 
     /* новое для практики 7–8 */
     --glass-bg: rgba(255,255,255,0.08);
-    --glass-border: rgba(255,255,255,0.25);
-    --card-radius: 14px;
     --gap: 18px;
 }
 
