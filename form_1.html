@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Олимпийские игры</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🛎 Олимписйкие игры</div>
+
+    <div class="burger-wrap">
+        <input type="checkbox" id="nav-toggle">
+        <label class="burger" for="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Главная страница</a></li>
+                <li><a href="history&sm_wr.html">История</a></li>
+                <li><a href="sports.html">Виды спорта</a></li>
+                <li><a href="last_olimpic_game.html">Последние олимписйские игры</a></li>
+                <li><a href="form_1.html">Форма</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <nav class="desktop-nav">
+        <ul>
+                <li><a href="index.html">Главная страница</a></li>
+                <li><a href="history&sm_wr.html">История</a></li>
+                <li><a href="sports.html">Виды спорта</a></li>
+                <li><a href="last_olimpic_game.html">Последние олимписйские игры</a></li>
+                <li><a href="form_1.html">Форма</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section id="home">
+    <h2> Любимый олимпийский вид спорта</h2>
+<p>На этой странице вы можете оставить информацию о том, какой вид спорта вам нравится больше всего. </p>
+<br>
+<p> Заполните форму, выберите дисциплину из списка или укажите свою собственную, если её нет в перечне.</p>
+<br>    
+</section>
+
+<section id="form">
+    <h2>Укажите свой любимый олимпийский вид спорта</h2>
+
+
+    <form>
+        <input type="text" placeholder="Имя" required>
+        <input type="email" placeholder="Email" required>
+        <input type="datetime-local">
+
+
+        <select required>
+            <option value="">Любимый вид спорта</option>
+            <option value="athletics">Лёгкая атлетика</option>
+            <option value="swimming">Плавание</option>
+            <option value="hockey">Хоккей</option>
+        </select>
+
+
+        <textarea rows="4" placeholder="Ваш комментарий..."></textarea>
+
+
+        <label><input type="checkbox" required> Согласен с условиями</label>
+
+
+        <button type="submit" class="primary-btn">Отправить</button>
+    </form>
+</section>
+
+
+
+</main>
+
+<footer>
+    © 2025 Олимпийские игры
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
